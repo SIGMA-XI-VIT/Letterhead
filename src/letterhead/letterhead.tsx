@@ -5,6 +5,7 @@ interface LetterheadProps {
   salutation: string | ReactNode;
   body: string | ReactNode;
   signature: string | ReactNode;
+  ref?: any;
 }
 
 const Letterhead: FC<LetterheadProps> = forwardRef((props, ref: any) => {
