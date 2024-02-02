@@ -1,6 +1,7 @@
 # Sigma-Xi Letterhead
 
 This rudimentary website provides a minimal setup to get a downloadable Letterhead format for official Chapter communications.
+Site is deployed at `https://sigmaxi-letterhead.onrender.com`, auto-deploys on every merge to main.
 
 ## Setup
 
