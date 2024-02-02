@@ -4,8 +4,8 @@ This rudimentary website provides a minimal setup to get a downloadable Letterhe
 
 ## Setup
 
-- Clone the repo
-- Run `yarn start` to install required dependencies and start the development server.
+- Clone the repo.
+- Run `yarn start` to install the required dependencies and start the development server.
 - Open `http://localhost:5173/` in your browser.
 
 ## Contribution Guidelines

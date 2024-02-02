@@ -38,13 +38,14 @@ const LetterheadForm = () => {
         form={downloadForm}
         name="downloadForm"
         layout="vertical"
+        className={styles.form}
         requiredMark
         scrollToFirstError
         onFinish={handleFinish}
         onFinishFailed={handleFinishFailed}
       >
         <Form.Item
-          label="Enter Salutation"
+          label={<div className={styles.label}>Enter Salutation</div>}
           name="salutation"
           tooltip="Dear XYZ"
           required
@@ -53,7 +54,7 @@ const LetterheadForm = () => {
           <Input className={styles.formInput} />
         </Form.Item>
         <Form.Item
-          label="Enter Message"
+          label={<div className={styles.label}>Enter Message</div>}
           name="message"
           required
           rules={[{ required: true, message: 'Required Field.' }]}
@@ -61,7 +62,7 @@ const LetterheadForm = () => {
           <Input.TextArea className={styles.formInput} />
         </Form.Item>
         <Form.Item
-          label="Enter Signature"
+          label={<div className={styles.label}>Enter Signature</div>}
           name="signature"
           required
           tooltip="Yours sincerely, etc"

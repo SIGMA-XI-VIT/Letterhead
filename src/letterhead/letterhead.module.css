@@ -1,0 +1,28 @@
+.letterheadContainer {
+  height: 1152px;
+  aspect-ratio: 1/1.415;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: url('../assets/Letterhead_Template.jpg') no-repeat;
+  background-size: cover;
+  text-align: left;
+}
+
+:is(.salutation, .body, .signature) {
+  position: relative;
+  left: 82px;
+  width: 672px;
+}
+
+.salutation {
+  top: 215px;
+}
+
+.body {
+  top: 241px;
+}
+
+.signature {
+  top: 267px;
+}

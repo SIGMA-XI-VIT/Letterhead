@@ -12,10 +12,15 @@ const Letterhead: FC<LetterheadProps> = forwardRef((props, ref: any) => {
 
   return (
     <div ref={ref} className={styles.letterheadContainer}>
-      <div className={styles.background} />
-      <div className={styles.salutation}>{salutation}</div>
-      <div className={styles.body}>{body}</div>
-      <div className={styles.signature}>{signature}</div>
+      <div className={styles.salutation}>
+        <pre>{salutation}</pre>
+      </div>
+      <div className={styles.body}>
+        <pre>{body}</pre>
+      </div>
+      <div className={styles.signature}>
+        <pre>{signature}</pre>
+      </div>
     </div>
   );
 });

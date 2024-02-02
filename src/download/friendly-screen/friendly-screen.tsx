@@ -6,7 +6,6 @@ const FriendlyScreen = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className={styles.background} />
       <div className={styles.container}>
         <div className={styles.title}>Return to Form</div>
         <div className={styles.message}>
@@ -16,7 +15,7 @@ const FriendlyScreen = () => {
           </span>
         </div>
         <Button
-          className={styles.button}
+          className={styles.formButton}
           type="primary"
           onClick={() => navigate('/')}
         >
