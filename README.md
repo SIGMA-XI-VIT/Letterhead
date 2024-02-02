@@ -1,6 +1,6 @@
 # Sigma-Xi Letterhead
 
-This rudimentary website provides a minimal setup to get downloadable Letterhead format for official Chapter Communications.
+This rudimentary website provides a minimal setup to get a downloadable Letterhead format for official Chapter communications.
 
 ## Setup
 
