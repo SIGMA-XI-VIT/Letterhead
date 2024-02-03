@@ -17,7 +17,7 @@ const FriendlyScreen = () => {
         <Button
           className={styles.formButton}
           type="primary"
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/form')}
         >
           Return to Form
         </Button>

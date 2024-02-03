@@ -56,7 +56,7 @@
   box-shadow: none;
   background-color: #001220ff;
   border-color: #fffcec;
-  margin-top: 40px;
+  margin-top: 30px;
 
   &:hover {
     border-color: #fffcec !important;
