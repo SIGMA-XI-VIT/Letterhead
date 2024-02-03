@@ -20,13 +20,16 @@
   justify-content: center;
   position: relative;
   left: -45px;
-  top: 59px;
+  top: -28px;
 }
 
 .header {
-  font-size: 4rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 6rem;
   font-weight: 900;
-  color: #ffee90;
+  letter-spacing: 2px;
+  color: #dbc02a;
+  mix-blend-mode: difference;
 }
 
 .formButton {
