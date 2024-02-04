@@ -31,9 +31,7 @@ const LetterheadForm = () => {
 
   return (
     <div className={styles.formContainer}>
-      <div className={styles.formHeader}>
-        <span className={styles.formTitle}>Sigma-Xi Letterhead</span>
-      </div>
+      <div className={styles.formTitle}>Sigma-Xi Letterhead</div>
       <Form
         form={downloadForm}
         name="downloadForm"

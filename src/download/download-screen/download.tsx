@@ -7,7 +7,31 @@ import { useRef } from 'react';
 import { useReactToPrint } from 'react-to-print';
 import { useNavigate } from 'react-router-dom';
 
-const Download = () => {
+const FriendlyScreen = () => {
+  const navigate = useNavigate();
+  return (
+    <>
+      <div className={styles.friendlyContainer}>
+        <div className={styles.title}>Return to Form</div>
+        <div className={styles.message}>
+          <span>
+            Letterhead details have not been entered yet. <br />
+            Please click the button to return to the form
+          </span>
+        </div>
+        <Button
+          className={styles.friendlyButton}
+          type="primary"
+          onClick={() => navigate('/form')}
+        >
+          Return to Form
+        </Button>
+      </div>
+    </>
+  );
+};
+
+const DownloadScreen = () => {
   const navigate = useNavigate();
   const targetRef = useRef(null);
   const formData = useSelector((state: RootState) => state.form.formData);
@@ -40,6 +64,19 @@ const Download = () => {
       </div>
     </div>
   );
+};
+
+const Download = () => {
+  const isFormSubmitted = useSelector(
+    (state: RootState) => state.form.isFormSubmitted
+  );
+
+  if (!isFormSubmitted) {
+    message.error('Letterhead details not submitted.');
+    return <FriendlyScreen />;
+  } else {
+    return <DownloadScreen />;
+  }
 };
 
 export { Download };
