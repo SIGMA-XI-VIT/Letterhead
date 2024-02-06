@@ -45,7 +45,7 @@ const LetterheadForm = () => {
         <Form.Item
           label={<div className={styles.label}>Enter Salutation</div>}
           name="salutation"
-          tooltip="Dear XYZ"
+          tooltip="To: Dr. Akella Sivaramakrishna, SAS"
           required
           rules={[{ required: true, message: 'Required Field.' }]}
         >
@@ -53,6 +53,7 @@ const LetterheadForm = () => {
         </Form.Item>
         <Form.Item
           label={<div className={styles.label}>Enter Message</div>}
+          tooltip="Dear Sir/Ma'am etc"
           name="message"
           required
           rules={[{ required: true, message: 'Required Field.' }]}
