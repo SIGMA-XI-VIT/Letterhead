@@ -32,6 +32,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: url('./assets/circle-scatter-haikei.svg');
+  overflow: hidden;
 }
 
 h1 {
@@ -62,6 +63,7 @@ pre {
   margin: unset;
   font-family: unset;
   text-wrap: pretty;
+  overflow-wrap: break-word;
 }
 
 @media (prefers-color-scheme: light) {

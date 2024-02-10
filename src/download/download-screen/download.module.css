@@ -20,7 +20,7 @@
   justify-content: center;
   position: relative;
   left: -45px;
-  top: -28px;
+  top: -35px;
 }
 
 .header {
@@ -32,12 +32,19 @@
   mix-blend-mode: difference;
 }
 
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 .formButton {
   outline: none;
   box-shadow: none;
   background-color: #001220ff;
   border-color: #fffcec;
-  margin-top: 40px;
 
   &:hover {
     border-color: #fffcec !important;
