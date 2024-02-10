@@ -12,7 +12,7 @@
 :is(.salutation, .body, .signature) {
   position: relative;
   left: 82px;
-  width: 672px;
+  width: 655px;
 }
 
 .salutation {

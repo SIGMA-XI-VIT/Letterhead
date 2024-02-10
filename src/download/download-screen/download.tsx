@@ -1,11 +1,11 @@
+import { useRef } from 'react';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { Button, message } from 'antd';
+import { useReactToPrint } from 'react-to-print';
 import { RootState } from '../../store';
 import styles from './download.module.css';
 import { Letterhead } from '../../letterhead/letterhead';
-import { Button, message } from 'antd';
-import { useRef } from 'react';
-import { useReactToPrint } from 'react-to-print';
-import { useNavigate } from 'react-router-dom';
 
 const Download = () => {
   const navigate = useNavigate();
@@ -24,19 +24,28 @@ const Download = () => {
       </div>
       <div className={styles.right}>
         <div className={styles.header}>Download</div>
-        <Button
-          onClick={useReactToPrint({
-            content: () => targetRef.current,
-            onAfterPrint: () => {
-              message.success('Download Successful!');
-              navigate('/');
-            },
-          })}
-          type="primary"
-          className={styles.formButton}
-        >
-          Download
-        </Button>
+        <div className={styles.buttonContainer}>
+          <Button
+            onClick={useReactToPrint({
+              content: () => targetRef.current,
+              onAfterPrint: () => {
+                message.success('Download Successful!');
+                navigate('/');
+              },
+            })}
+            type="primary"
+            className={styles.formButton}
+          >
+            Download
+          </Button>
+          <Button
+            onClick={() => navigate('/form')}
+            type="primary"
+            className={styles.formButton}
+          >
+            Return to Form
+          </Button>
+        </div>
       </div>
     </div>
   );
